@@ -7,8 +7,8 @@ curl_setopt($curl, CURLOPT_POST, true);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 $headers = array(
-  "Content-Type: form-data",
-//   "Content-Type: application/x-www-form-urlencoded",
+//   "Content-Type: form-data",
+  "Content-Type: application/x-www-form-urlencoded",
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
