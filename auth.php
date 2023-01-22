@@ -13,10 +13,9 @@ curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
 $data = "client_id=746720933176046&client_secret=6fbcc075c5afd5d8556a8bdcc814d5f3&grant_type=authorization_code&redirect_uri=https://cybergirl.in/auth.php&code=".$_GET['code'];
 // echo($data);
-</br>
+echo("\r\n");
 echo('Checking.....');
-
-</br>
+echo("\r\n");
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 
 $resp = curl_exec($curl);
