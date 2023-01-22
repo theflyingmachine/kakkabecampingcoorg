@@ -12,14 +12,15 @@ $headers = array(
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 
-$data = "client_id=746720933176046&client_secret=6fbcc075c5afd5d8556a8bdcc814d5f3&grant_type=authorization_code&redirect_uri=https%3A%2F%2Fcybergirl.in%2Fauth.php&code=".$_GET['code'];
+$data = "client_id=746720933176046&client_secret=6fbcc075c5afd5d8556a8bdcc814d5f3&grant_type=authorization_code&redirect_uri=https://cybergirl.in/auth.php&code=".$_GET['code'];
 // echo($data);
 echo("\r\n");
 echo('Checking.....');
+echo($_GET['code']);
 echo("\r\n");
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 
-$resp = curl_exec($curl);
+// $resp = curl_exec($curl);
 curl_close($curl);
 // var_dump($resp);
 echo($resp);
