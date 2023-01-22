@@ -19,6 +19,6 @@ curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 $resp = curl_exec($curl);
 curl_close($curl);
 var_dump($resp);
-echo($resp);
-echo(var_dump($resp));
+// echo($resp);
+// echo(var_dump($resp));
 ?>
