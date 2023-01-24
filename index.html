@@ -2,55 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cybergirl.in</title>
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bd-coming-soon.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cybergirl.in</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bd-coming-soon.css">
+
+  <style>
+      a.button {
+          -webkit-appearance: button;
+          -moz-appearance: button;
+          appearance: button;
+
+          text-decoration: none;
+          color: initial;
+      }
+  </style>
 </head>
 
 <body class="min-vh-100 d-flex flex-column">
 <script>
-  window.fbAsyncInit = function() {
+  window.fbAsyncInit = function () {
     FB.init({
-      appId      : '1221348438790499',
-      xfbml      : true,
-      version    : 'v15.0'
+      appId: '1221348438790499',
+      xfbml: true,
+      version: 'v15.0'
     });
     FB.AppEvents.logPageView();
   };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+  (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-dark bg-transparenet">
-               
-                <span class="navbar-text d-none d-sm-inline-block">Cybergirl.in</span>
-            </nav>
-        </div>
-    </header>
+<header>
+  <div class="container">
+    <nav class="navbar navbar-dark bg-transparenet">
+
+      <span class="navbar-text d-none d-sm-inline-block">Cybergirl.in</span>
+    </nav>
+  </div>
+</header>
 
 
-    <main class="my-auto">
-        <div class="container">
-            <h1 class="page-title">We're coming soon</h1>
-            <p class="page-description">This site is under construction, we are building something awesome.
-            </p>
-        <form action="https://api.instagram.com/oauth/authorize?client_id= 746720933176046&redirect_uri=https://cybergirl.in/auth/&scope=user_profile,user_media&response_type=code">
-    <input type="submit" value="Login with Instagram" />
-</form>
-        </div>
-    </main>
+<main class="my-auto">
+  <div class="container">
+    <h1 class="page-title">We're coming soon</h1>
+    <p class="page-description">This site is under construction, we are building something awesome.
+    </p>
+
+    <a href="https://google.com" class="button">Verify Your Instagram Account</a>
+
+
+  </div>
+</main>
 </body>
 
 </html>
