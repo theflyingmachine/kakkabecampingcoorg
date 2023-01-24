@@ -14,13 +14,15 @@
   <link rel="stylesheet" href="assets/css/bd-coming-soon.css">
 
   <style>
-      a.button {
-          -webkit-appearance: button;
-          -moz-appearance: button;
-          appearance: button;
-
+      .fcc-btn {
+          background-color: #199319;
+          color: white;
+          padding: 15px 25px;
           text-decoration: none;
-          color: initial;
+      }
+
+      .fcc-btn:hover {
+          background-color: #223094;
       }
   </style>
 </head>
@@ -63,7 +65,9 @@
     <p class="page-description">This site is under construction, we are building something awesome.
     </p>
 
-    <a href="https://api.instagram.com/oauth/authorize?client_id= 746720933176046&redirect_uri=https://cybergirl.in/auth/&scope=user_profile,user_media&response_type=code" class="button">Verify Your Instagram Account</a>
+    <a class="fcc-btn button"
+     href="https://api.instagram.com/oauth/authorize?client_id= 746720933176046&redirect_uri=https://cybergirl.in/auth/&scope=user_profile,user_media&response_type=code"
+     >Verify Your Instagram Account</a>
 
 
   </div>
